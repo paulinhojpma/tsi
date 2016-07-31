@@ -10,6 +10,7 @@ public class Circulo implements Figura{
 	public void perimetro() {
 		raio=new Reta(new Ponto(1,2), new Ponto(3,2));
 		this.perimetro=2*PI*raio.getTamanho();
+		System.out.println("Perimetro: "+perimetro);
 		
 	}
 
@@ -17,6 +18,7 @@ public class Circulo implements Figura{
 	public void area() {
 		raio=new Reta(new Ponto(1,2), new Ponto(3,2));
 		this.area=PI*Math.pow(raio.getTamanho(), 2);
+		System.out.println("Area: "+area);
 		
 	}
 
